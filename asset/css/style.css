@@ -33,7 +33,7 @@ nav a:hover:before {right: calc(100% + 50px);}
 
 section {position: absolute; z-index: 5; top: calc(50% - 250px); right: 0; left: 0; margin: auto; display: none; box-sizing: border-box; overflow: hidden; padding: 20px; width: 90%; max-width: 1000px; height: 500px; box-shadow: 0 0 50px #aaa, 0 0 5px #eee inset; border-radius: 10px; background-color: #fffeff; background-image: url("/asset/image/style/bg-top.jpg"), url("/asset/image/style/bg-bottom.jpg"); background-position: top right, bottom left; background-size: 45% auto, 45% auto; background-repeat: no-repeat, no-repeat; transform-origin: center;}
 
-section::after {content: "© All Rights reserved. Ver: 3.1"; position: absolute; z-index: 2; bottom: 0; left: 5px; font-size: 10px; color: #000; text-align: center;}
+section::after {content: "© All Rights reserved. Ver: 3.2"; position: absolute; z-index: 2; bottom: 0; left: 5px; font-size: 10px; color: #000; text-align: center;}
 
 wrapper {position: relative; z-index: 2; display: block; box-sizing: border-box; overflow: auto; overflow-x: hidden; height: calc(100% - 80px); margin: 5px;}
 
