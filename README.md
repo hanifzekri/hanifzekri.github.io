@@ -1,3 +1,3 @@
 # hanifzekri.github.io
 
-PersonalWebsite
+Personal Website || Online Resume || Portfolio || Curriculum Vitae
