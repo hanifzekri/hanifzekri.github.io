@@ -1,5 +1,3 @@
 # hanifzekri.github.io
 
-PersonalWebsite
-
-Linked domain: https://hanifzekri.com
+Personal Website || Online Resume || Portfolio || Curriculum Vitae
