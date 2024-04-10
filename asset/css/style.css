@@ -9,7 +9,6 @@ html {position: relative; display: block; overflow: hidden; height: 100%; width:
 body {position: relative; display: block; overflow: hidden; height: 100%; width: 100%; background-color: #fff; font-family: Signika; font-size: 16px; line-height: normal;}
 a {cursor: pointer;}
 br {clear: both;}
-div {position: relative; display: inline-block; overflow: hidden; box-sizing: border-box;}
 
 nav {position: absolute; z-index: 30; top: calc(50% - 300px); right: 0; left: 0; text-align: center; font-size: 18px;}
 nav a {position: relative; display: inline-block; overflow: hidden; margin-top: 10px; padding: 5px; color: #9689e1; transition: 0.5s; border-radius: 5px; font-family: SignikaB;}
@@ -58,7 +57,7 @@ h5 {display: inline; font-family: SignikaB; font-size: 20px; color: #9689e1; tex
 .start label a icon.portfolio {background-position: right -15px;}
 
 .skills h5 {display: block;} 
-.skills div {display: grid; place-content: center; float: left; width: calc(50% - 3px); height: calc(33% - 5px); min-height: 70px; margin-top: 5px; padding: 15px; background: linear-gradient(45deg, #f1f7ff99, transparent, #f1f7ff99); border-radius: 5px; text-align: center; cursor: pointer; transition: 1s;}
+.skills div {position: relative; display: grid; place-content: center; overflow: hidden; box-sizing: border-box; float: left; width: calc(50% - 3px); height: calc(33% - 5px); min-height: 80px; margin-top: 5px; padding: 15px; background: linear-gradient(45deg, #f1f7ff99, transparent, #f1f7ff99); border-radius: 5px; text-align: center; cursor: pointer; transition: 1s;}
 .skills div:nth-of-type(even){margin-left: 5px;}
 .skills div span {display: none; margin-top: 5px; color: #000c;}
 
@@ -68,20 +67,20 @@ h5 {display: inline; font-family: SignikaB; font-size: 20px; color: #9689e1; tex
 
 .experiences exptype {position: absolute; top: 50px; left: 50px; display: inline-block; cursor: pointer; transition: 0.5s;}
 .experiences exptype.second {top: 200px;}
-.experiences exptype.exptypetop {top: 10px; left: 10px;}
+.experiences exptype.exptypetop {top: 10px !important; left: 10px;}
 .experiences exptype.exptypetop a {display: none;}
 .experiences exptype.exptypebottom {top: auto; bottom: 5px; left: 10px;}
 .experiences exptype span {display: block;}
 .experiences exptype a {display: inline-block; padding: 5px 0 0; background-color: #fff5; color: #777; border-bottom: 1px dotted #999;}
-.experiences explist {position: absolute; z-index: 2; top: 70px; left: 5px; right: 5px; display: none; overflow: auto; height: calc(100% - 180px); background-color: #fff; border-radius: 5px;}
-.experiences div {position: relative; float: left; width: calc(50% - 3px); height: calc(50% - 5px); min-height: 90px; margin-top: 5px; padding: 15px; background: linear-gradient(45deg, #f1f7ff99, transparent, #f1f7ff99); border-radius: 5px; cursor: pointer;}
-.experiences div:nth-of-type(even) {margin-left: 5px;}
-.experiences div h5 {display: block;}
-.experiences div small {display: block; font-size: 14px; color: #777;}
-.experiences div p {position: absolute; bottom: -200px; left: 0; right: 0; display: block; overflow: hidden; box-sizing: border-box; height: 100%; padding: 10px; font-size: 14px; background-color: #ffffffdd; transition: 0.5s; border-radius: 5px;}
-.experiences div a {position: absolute; z-index: 2; bottom: 5px; right: 10px; font-size: 18px; color: #fbb9e9;}
-.experiences div a u {font-family: SignikaB; font-weight: bolder; text-decoration: none;}
-.experiences div p.active {bottom: 0;}
+.experiences explist {position: absolute; z-index: 2; top: 70px; left: 5px; right: 5px; display: none; overflow: auto; height: calc(100% - 200px);}
+.experiences li div {position: relative; display: block; overflow: hidden; box-sizing: border-box; height: calc(100% - 50px); margin: 20px 20px 20px 0; padding: 20px; background: linear-gradient(45deg, #f1f7ff99, transparent, #f1f7ff99); border-radius: 5px; cursor: pointer;}
+.experiences li div:nth-of-type(even) {margin-left: 5px;}
+.experiences li div h5 {display: block;}
+.experiences li div small {display: block; font-size: 14px; color: #777;}
+.experiences li div p {position: absolute; bottom: -500px; left: 0; right: 0; display: block; overflow: hidden; box-sizing: border-box; height: 100%; padding: 10px; font-size: 14px; background-color: #ffffffdd; transition: 0.5s; border-radius: 5px;}
+.experiences li div a {position: absolute; z-index: 2; bottom: 5px; right: 10px; font-size: 18px; color: #fbb9e9;}
+.experiences li div a u {font-family: SignikaB; font-weight: bolder; text-decoration: none;}
+.experiences li div p.active {bottom: 0;}
 
 .history img {position: absolute; z-index: 1; right: 30px; bottom: 12px; width: 240px;}
 .history wrapper {padding: 20px 230px 0 0;}
@@ -91,7 +90,7 @@ h5 {display: inline; font-family: SignikaB; font-size: 20px; color: #9689e1; tex
 .certificate ul li {margin: 20px;}
 .certificate small {display: block; padding: 5px 2px; color: #333;}
 
-.contact div {position: relative; width: calc(50% - 20px); height: 120px; margin: 10px;}
+.contact div {position: relative; display: inline-block; overflow: hidden; box-sizing: border-box; width: calc(50% - 20px); height: 120px; margin: 10px;}
 .contact div::before {content: ""; position: absolute; z-index: 1; left: 0; top: 10px; display: block; overflow: hidden; width: 100px; height: 100px; border: 2px solid #eee; border-radius: 100%; transition: 0.5s;}
 .contact icon {position: absolute; z-index: 2; top: 15px; left: 25px; display: block; width: 58px; height: 60px; background-image: url('/asset/image/style/icons.png'); background-position: top left; background-repeat: no-repeat; background-size: 135px; transition: 0.5s;}
 .contact icon.linkedin {background-position: -60px top;}
@@ -103,13 +102,14 @@ h5 {display: inline; font-family: SignikaB; font-size: 20px; color: #9689e1; tex
 .contact div:hover::before {width: 230px; border-radius: 10px;}
 
 @media only screen and (max-height:600px){nav {top: 0;}}
+
 @media only screen and (max-height:550px){
 section {top: 40px; height: calc(100% - 50px);}
 .start img {top: 10px; left: 5%; height: 100%;}
 .start aside {padding-top: 10% !important;}
 .experiences exptype {top: 20px;}
 .experiences exptype.second {top: 130px;}
-.experiences explist {height: calc(100% - 70px);}
+.experiences explist {height: calc(100% - 70px); background-color: #fff; border-radius: 5px;}
 }
 @media only screen and (max-height:500px){.history img {width: auto; max-height: 60%;}}
 @media only screen and (max-height:450px){.contact div {margin: 0 10px;}}
@@ -136,12 +136,12 @@ nav {padding: 10px !important;}
 @media only screen and (max-width:750px){
 .history img {width: 200px;}
 .history wrapper {padding-right: 200px;}
-.experiences div {width: 100%; height: calc(25% - 5px); margin: 5px 0 0 0 !important;}
 }
 
 @media only screen and (max-width:650px){
 .start aside {width: 64%;}
 .start img {left: -12%;}
+.skills div {float: none; width: 100%; margin: 5px 0 0 !important; min-height: 90px;}
 }
 
 @media only screen and (max-width:550px){
@@ -154,7 +154,6 @@ section {top: 3%; bottom: 3%; height: auto; background-size: 60% auto, 60% auto;
 .start img {top: 250px; height: calc(100% - 240px); left: 50%; transform: translateX(-50%);}
 .start aside {width: 100%; padding: 20px 10px !important;}
 .start aside h2 {font-size: 48px; line-height: 48px;}
-.skills div {float: none; width: 100%; margin: 5px 0 0 !important; height: calc(16% - 5px);}
 .history img {bottom: 5px; right: calc(50% - 100px);}
 .history wrapper {height: calc(100% - 300px); padding: 10px;}
 .contact div {width: 100%; margin: 10px 10px -10px 10px;}

@@ -171,6 +171,14 @@ $(document).ready(function() {
 	//
 	var startimg_width = $('.start img').height();
 	if (startimg_width <= 200) $('.start img').hide();
+	
+	//
+	var splide1 = new Splide('#slide_fsd', {autoplay: true, rewind: true, arrow: false, type: 'loop'});
+	splide1.mount();
+	
+	var splide2 = new Splide('#slide_wde', {autoplay: true, rewind: true, arrow: false, type: 'loop'});
+	splide2.mount();
+	
 });
 
 function expYear() {
