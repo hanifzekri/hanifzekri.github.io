@@ -105,11 +105,6 @@ $(document).ready(function() {
 	});
 	
 	//
-	var startimg_width = $('.start img').height();
-	if (startimg_width <= 200) $('.start img').hide();
-	else $('.start img').show();
-	
-	//
 	var splide1 = new Splide('#slide_fsd', {autoplay: true, rewind: true, arrow: false, type: 'loop'});
 	splide1.mount();
 	
