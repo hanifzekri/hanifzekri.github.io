@@ -72,7 +72,7 @@ h5 {display: inline; font-family: SignikaB; font-size: 20px; color: #9689e1; tex
 .experiences exptype.exptypebottom {top: auto; bottom: 5px; left: 10px;}
 .experiences exptype span {display: block;}
 .experiences exptype a {display: inline-block; padding: 5px 0 0; background-color: #fff5; color: #777; border-bottom: 1px dotted #999;}
-.experiences explist {position: absolute; z-index: 2; top: 70px; left: 5px; right: 5px; overflow: auto; height: calc(100% - 200px);}
+.experiences explist {position: absolute; z-index: 2; top: 5px; left: 5px; right: 5px; overflow: auto; height: calc(100% - 20px);}
 .experiences li div {position: relative; display: block; overflow: hidden; box-sizing: border-box; height: calc(100% - 50px); margin: 20px 20px 20px 0; padding: 20px; background: linear-gradient(45deg, #f1f7ff99, transparent, #f1f7ff99); border-radius: 5px; cursor: pointer;}
 .experiences li div:nth-of-type(even) {margin-left: 5px;}
 .experiences li div h5 {display: block;}
@@ -109,7 +109,6 @@ section {top: 40px; height: calc(100% - 50px);}
 .start aside {padding-top: 10% !important;}
 .experiences exptype {top: 20px;}
 .experiences exptype.second {top: 130px;}
-.experiences explist {height: calc(100% - 70px); background-color: #fff; border-radius: 5px;}
 }
 @media only screen and (max-height:500px){.history img {width: auto; max-height: 60%;}}
 @media only screen and (max-height:450px){.contact div {margin: 0 10px;}}
@@ -164,7 +163,6 @@ section {top: 3%; bottom: 3%; height: auto; background-size: 60% auto, 60% auto;
 .experiences exptype {left: 10px;}
 .experiences exptype h4 {font-size: 24px;}
 .experiences exptype span {font-size: 14px;}
-.experiences explist {min-height: 100px;}
 .experiences div p {font-size: 12px;}
 .contact div:hover::before {width: calc(100% - 15px);}
 }
