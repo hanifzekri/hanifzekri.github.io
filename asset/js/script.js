@@ -35,9 +35,6 @@ $(document).ready(function() {
 				$(this).removeClass('exptypetop');
 				$(this).removeClass('exptypebottom');
 			});
-			$("[id^='explist_']").each(function(){
-				$(this).slideUp();
-			});
 		}
 		
 		if (hashid == aid) {
@@ -108,69 +105,9 @@ $(document).ready(function() {
 	});
 	
 	//
-	$("[id^='exptype_']").click(function(){
-		
-		var exptype = $(this).attr('id');
-		var explist = 'explist_' + exptype.substr(8);
-		
-		$("[id^='explist_']").each(function(){
-			var selectid = $(this).attr('id');
-			if (selectid != explist) $(this).slideUp();
-		});
-		
-		$("[id^='exptype_']").each(function(){
-			var selectid = $(this).attr('id');
-			if (selectid != exptype) {
-				$(this).addClass('exptypebottom');
-				$(this).removeClass('exptypetop');
-			}
-			else $(this).removeClass('exptypebottom');
-		});
-		
-		if ($('#'+explist).is(':visible')) {
-			$('#'+explist).slideUp().promise().done(function(){
-				$("[id^='exptype_']").each(function(){
-					$(this).removeClass('exptypetop');
-					$(this).removeClass('exptypebottom');
-				});
-			});
-		} else {
-			$("#"+exptype).removeClass('exptypetop').promise().done(function(){
-				$("[id^='expitem_']").each(function(){
-					var expitemid = '#'+$(this).attr('id');
-					$(expitemid+' p').removeClass('active');
-					$(expitemid+' a').html('<u> » </u> more');
-				}).promise().done(function(){
-					$("#"+exptype).addClass('exptypetop');
-					$('#'+explist).slideDown();
-				});
-			});
-		}		
-	});
-	
-	//
-	$("[id^='expitem_']").click(function(){
-		var expitemid = '#'+$(this).attr('id');
-		$(expitemid+' p').toggleClass('active').promise().done(function(){
-			if ($(expitemid+' p').hasClass('active')) {
-				$(expitemid+' a').animate({'font-size': 0}).promise().done(function(){
-					$(expitemid+' a').html('<u> x </u> close').promise().done(function(){
-						$(expitemid+' a').animate({'font-size': '18px'});
-					});
-				});
-			} else {
-				$(expitemid+' a').animate({'font-size': 0}).promise().done(function(){
-					$(expitemid+' a').html('<u> » </u> more').promise().done(function(){
-						$(expitemid+' a').animate({'font-size': '18px'});
-					});
-				});
-			}
-		});
-	});
-	
-	//
 	var startimg_width = $('.start img').height();
 	if (startimg_width <= 200) $('.start img').hide();
+	else $('.start img').show();
 	
 	//
 	var splide1 = new Splide('#slide_fsd', {autoplay: true, rewind: true, arrow: false, type: 'loop'});
