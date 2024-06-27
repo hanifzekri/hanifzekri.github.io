@@ -72,12 +72,12 @@ h5 {display: inline; font-family: SignikaB; font-size: 20px; color: #9689e1; tex
 .experiences exptype.exptypebottom {top: auto; bottom: 5px; left: 10px;}
 .experiences exptype span {display: block;}
 .experiences exptype a {display: inline-block; padding: 5px 0 0; background-color: #fff5; color: #777; border-bottom: 1px dotted #999;}
-.experiences explist {position: absolute; z-index: 2; top: 70px; left: 5px; right: 5px; display: none; overflow: auto; height: calc(100% - 200px);}
+.experiences explist {position: absolute; z-index: 2; top: 70px; left: 5px; right: 5px; overflow: auto; height: calc(100% - 200px);}
 .experiences li div {position: relative; display: block; overflow: hidden; box-sizing: border-box; height: calc(100% - 50px); margin: 20px 20px 20px 0; padding: 20px; background: linear-gradient(45deg, #f1f7ff99, transparent, #f1f7ff99); border-radius: 5px; cursor: pointer;}
 .experiences li div:nth-of-type(even) {margin-left: 5px;}
 .experiences li div h5 {display: block;}
 .experiences li div small {display: block; font-size: 14px; color: #777;}
-.experiences li div p {position: absolute; bottom: -500px; left: 0; right: 0; display: block; overflow: hidden; box-sizing: border-box; height: 100%; padding: 10px; font-size: 14px; background-color: #ffffffdd; transition: 0.5s; border-radius: 5px;}
+.experiences li div p {position: absolute; bottom: 0; left: 0; right: 0; display: block; overflow: hidden; box-sizing: border-box; height: 100%; padding: 10px; font-size: 14px; background-color: #ffffffdd; transition: 0.5s; border-radius: 5px;}
 .experiences li div a {position: absolute; z-index: 2; bottom: 5px; right: 10px; font-size: 18px; color: #fbb9e9;}
 .experiences li div a u {font-family: SignikaB; font-weight: bolder; text-decoration: none;}
 .experiences li div p.active {bottom: 0;}
